@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programm\\Visual Studio\\Project\\BookStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\bookstore.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\bookstore.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\migrations\\bookstore2dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\migrations\\bookstore2dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\migrations\\20240323114542_initialusenewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\migrations\\20240323114542_initialusenewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\migrations\\20240323112814_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\migrations\\20240323112814_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\helper.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\helper.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\models\\bookentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\models\\bookentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\bookstore.postgres.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\bookstore.postgres.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\bookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\bookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\configurations\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\configurations\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|d:\\programm\\visual studio\\project\\bookstore\\bookstore.postgres\\repositories\\ibooksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}|BookStore.Postgres\\BookStore.Postgres.csproj|solutionrelative:bookstore.postgres\\repositories\\ibooksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookStore2DbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\BookStore2DbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Migrations\\BookStore2DbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\BookStore2DbContextModelSnapshot.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Migrations\\BookStore2DbContextModelSnapshot.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T11:29:54.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookStore.http",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\BookStore.http",
+              "RelativeDocumentMoniker": "BookStore\\BookStore.http",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\BookStore.http",
+              "RelativeToolTip": "BookStore\\BookStore.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-03-22T17:13:42.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Dockerfile",
+              "RelativeDocumentMoniker": "BookStore\\Dockerfile",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Dockerfile",
+              "RelativeToolTip": "BookStore\\Dockerfile",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-23T11:50:05.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookEntity.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Models\\BookEntity.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Models\\BookEntity.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Models\\BookEntity.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Models\\BookEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T05:36:27.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Helper.txt",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Helper.txt",
+              "RelativeDocumentMoniker": "BookStore\\Helper.txt",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Helper.txt",
+              "RelativeToolTip": "BookStore\\Helper.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-22T13:11:17.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksRepository.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Repositories\\BooksRepository.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Repositories\\BooksRepository.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Repositories\\BooksRepository.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Repositories\\BooksRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAASwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:22:55.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\appsettings.json",
+              "RelativeDocumentMoniker": "BookStore\\appsettings.json",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\appsettings.json",
+              "RelativeToolTip": "BookStore\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-22T16:52:03.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Program.cs",
+              "RelativeDocumentMoniker": "BookStore\\Program.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Program.cs",
+              "RelativeToolTip": "BookStore\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T05:58:25.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "BookStore\\WeatherForecast.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\WeatherForecast.cs",
+              "RelativeToolTip": "BookStore\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T13:04:41.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240323114542_InitialUseNewDB.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\20240323114542_InitialUseNewDB.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Migrations\\20240323114542_InitialUseNewDB.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\20240323114542_InitialUseNewDB.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Migrations\\20240323114542_InitialUseNewDB.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T12:05:33.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240323112814_initial.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\20240323112814_initial.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Migrations\\20240323112814_initial.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Migrations\\20240323112814_initial.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Migrations\\20240323112814_initial.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T11:30:05.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookStore.csproj",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\BookStore.csproj",
+              "RelativeDocumentMoniker": "BookStore\\BookStore.csproj",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\BookStore.csproj",
+              "RelativeToolTip": "BookStore\\BookStore.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-22T06:02:10.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "BookStore\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "BookStore\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:52:25.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookStore.Postgres.csproj",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\BookStore.Postgres.csproj",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
+              "RelativeToolTip": "BookStore.Postgres\\BookStore.Postgres.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-22T05:45:31.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IBooksRepository.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Repositories\\IBooksRepository.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Repositories\\IBooksRepository.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Repositories\\IBooksRepository.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Repositories\\IBooksRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:49:56.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookConfiguration.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Configurations\\BookConfiguration.cs",
+              "RelativeDocumentMoniker": "BookStore.Postgres\\Configurations\\BookConfiguration.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore.Postgres\\Configurations\\BookConfiguration.cs",
+              "RelativeToolTip": "BookStore.Postgres\\Configurations\\BookConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T16:20:31.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookStore\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\Programm\\Visual Studio\\Project\\BookStore\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookStore\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:51:55.562Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 800,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

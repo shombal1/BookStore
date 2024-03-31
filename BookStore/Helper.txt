@@ -1,0 +1,5 @@
+﻿
+// how migrate
+dotnet ef migrations add initial -s BookStore -p BookStore.Postgres
+// how update database (create table , maybe update table)
+dotnet ef database update -s BookStore -p BookStore.Postgres

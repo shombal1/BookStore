@@ -1,0 +1,12 @@
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.deps.json
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.dll
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.pdb
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.csproj.AssemblyReference.cache
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.AssemblyInfoInputs.cache
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.AssemblyInfo.cs
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.csproj.CoreCompileInputs.cache
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.dll
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\refint\BookStore.Postgres.dll
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.pdb
+D:\Programm\Visual Studio\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\ref\BookStore.Postgres.dll
