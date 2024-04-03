@@ -10,54 +10,48 @@ namespace BookStore.Postgres.Repositories
         
         public BooksRepository(BookStoreDbContext dbContext)
         {
-            this._dbContext = dbContext;
+            _dbContext = dbContext;
         }
 
-        public async Task<List<BookEntity>> GetAllBooks()
+        public async Task<List<BookEntity>> GetAll()
         {
-            return await _dbContext.Books.AsNoTracking().ToListAsync();
+            return await _dbContext.Books.AsNoTracking()
+                .Include(key=>key.Author)
+                .ToListAsync();
         }
 
-        public async Task<BookEntity> Update(Guid id,string newTitle, string newDescription, string newAuthor, decimal newPrice)
+        public async Task Update(Guid id,string newTitle, string newDescription, decimal newPrice)
         {
-            BookEntity updateBookEntity = _dbContext.Update(
-                await _dbContext.Books.AsNoTracking().FirstAsync
-                (
-                    bookEntity => bookEntity.Id == id
-                )).Entity;
-
-            updateBookEntity.Title = newTitle;
-            updateBookEntity.Author = newAuthor;
-            updateBookEntity.Description = newDescription;
-            updateBookEntity.Price = newPrice;
+            await _dbContext.Books.Where(key => key.Id == id)
+                .ExecuteUpdateAsync(val =>
+                    val.SetProperty(key => key.Title,newTitle)
+                    .SetProperty(key=>key.Description,newDescription)
+                    .SetProperty(key=>key.Price,newPrice)
+                );
             
             await _dbContext.SaveChangesAsync();
-            
-            return updateBookEntity;
         }
 
-        public async Task<BookEntity> Delete(Guid id)
+        public async Task Delete(Guid id)
         {
-            BookEntity deletedBookEntity = _dbContext.Books.Remove(
-                await _dbContext.Books.AsNoTracking().FirstAsync
-                    (
-                        bookEntity => bookEntity.Id == id
-                    )).Entity;
+            _dbContext.Books.Remove
+            (
+                await _dbContext.Books.AsNoTracking()
+                    .FirstAsync(bookEntity => bookEntity.Id == id)
+            );
 
             await _dbContext.SaveChangesAsync();
-            
-            return deletedBookEntity;
         }
 
-        public async Task<Guid> Add(string title, string description, string author, decimal price)
+        public async Task<Guid> Add(Guid authorId,string title, string description, decimal price)
         {
             Guid id = Guid.NewGuid();
-            _dbContext.Books.Add(new BookEntity
+            await _dbContext.Books.AddAsync(new BookEntity
             {
                 Id = id,
                 Title = title,
                 Description = description,
-                Author = author,
+                AuthorId = authorId,
                 Price = price
             });
 

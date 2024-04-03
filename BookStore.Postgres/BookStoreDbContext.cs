@@ -12,11 +12,13 @@ namespace BookStore.Postgres
         }
 
         public DbSet<BookEntity> Books { get; set; }
+        public DbSet<AuthorEntity> Authors { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookConfiguration());
-
+            modelBuilder.ApplyConfiguration(new AuthorConfiguration());
+            
             base.OnModelCreating(modelBuilder);
         }
     }

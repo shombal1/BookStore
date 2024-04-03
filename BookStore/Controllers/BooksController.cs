@@ -1,4 +1,6 @@
-﻿using BookStore.Postgres.Repositories;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+using BookStore.Postgres.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Controllers
@@ -17,26 +19,30 @@ namespace BookStore.Controllers
         [HttpGet]
         public async Task<JsonResult> Get()
         {
-            return new JsonResult(await _booksRepository.GetAllBooks());
+            return new JsonResult(await _booksRepository.GetAll(),
+                new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
         }
 
         [HttpPost]
-        public async Task<JsonResult> Add(string title,string description,string author,decimal price)
+        public async Task<JsonResult> Add(Guid authorId,string title,string description,decimal price)
         {
-            Guid id = await _booksRepository.Add(title, description, author, price);
+            Guid id = await _booksRepository.Add(authorId,title, description, price);
             return new JsonResult(id);
         }
 
         [HttpDelete]
-        public async Task<JsonResult> Delete(Guid id)
+        public Task Delete(Guid id)
         {
-            return new JsonResult(await _booksRepository.Delete(id));
+            return _booksRepository.Delete(id);
         }
 
         [HttpPut]
-        public async Task<JsonResult> Update(Guid id,string newTitle,string newDescription,string newAuthor,decimal newPrice)
+        public Task Update(Guid id,string newTitle,string newDescription,decimal newPrice)
         {
-            return new JsonResult(await _booksRepository.Update(id,newTitle,newDescription,newAuthor,newPrice));
+            return _booksRepository.Update(id,newTitle,newDescription,newPrice);
         }
     }
 }
