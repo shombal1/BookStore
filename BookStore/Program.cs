@@ -1,6 +1,7 @@
 using BookStore.Postgres;
 using BookStore.Postgres.Repositories;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -13,14 +14,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BookStoreDbContext>(
-    (options) => 
-    {
-        options.UseNpgsql(configuration.GetConnectionString(nameof(BookStoreDbContext)));
-    });
+    (options) => { options.UseNpgsql(configuration.GetConnectionString(nameof(BookStoreDbContext))); });
 
 builder.Services.AddScoped<IBooksRepository, BooksRepository>();
 builder.Services.AddScoped<IAuthorsRepository, AuthorsRepository>();
 
+IConnectionMultiplexer multiplexer =
+    ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis") ?? throw new InvalidOperationException());
+builder.Services.AddSingleton(multiplexer);
 
 var app = builder.Build();
 

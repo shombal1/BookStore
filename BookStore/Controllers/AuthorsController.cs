@@ -1,9 +1,8 @@
-
-
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using BookStore.Postgres.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace BookStore.Controllers
 {
@@ -17,12 +16,23 @@ namespace BookStore.Controllers
         {
             _authorsRepository = authorsRepository;
         }
-        
+
         [HttpGet]
-        public async Task<JsonResult> Get()
+        [Route("All")]
+        public async Task<JsonResult> GetAll()
         {
-            return new JsonResult(
-                await _authorsRepository.GetAll() ,
+            return new JsonResult(await _authorsRepository.GetAll(),
+                new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
+        }
+
+        [HttpGet]
+        [Route("One")]
+        public async Task<JsonResult> Get(Guid id)
+        {
+            return new JsonResult(await _authorsRepository.Get(id),
                 new JsonSerializerOptions()
                 {
                     ReferenceHandler = ReferenceHandler.IgnoreCycles
@@ -34,11 +44,11 @@ namespace BookStore.Controllers
         {
             return _authorsRepository.Update(id, firstName, lastName, patronymic, city);
         }
-        
+
         [HttpPost]
-        public async Task<JsonResult> Add(string firstName,string lastName,string? patronymic,string city)
+        public async Task<JsonResult> Add(string firstName, string lastName, string? patronymic, string city)
         {
-            Guid id = await _authorsRepository.Add(firstName,lastName,patronymic,city);
+            Guid id = await _authorsRepository.Add(firstName, lastName, patronymic, city);
             return new JsonResult(id);
         }
 

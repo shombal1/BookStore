@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2hybzPZkKhPRstJBSFX2T1yBCRi5PPkkVh2NHl9zagYoaKkPfxy6ZWqFMxEomtV9dFVmaabqCZhAehKjDqltOw==",
+  "dgSpecHash": "vJYH2h/ODJ/d9DUmqQfmH/uKpW2dLjxTPrm8e1pKq6/0i3CselA9g0xFdCEIyIM9V1FFC8GVv9mWUgHxorbQqw==",
   "success": true,
   "projectFilePath": "D:\\Programm\\JetBrains Rider 2023.1\\Project\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\stackexchange.redis\\2.7.33\\stackexchange.redis.2.7.33.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

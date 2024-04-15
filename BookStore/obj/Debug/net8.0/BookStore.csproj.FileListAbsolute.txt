@@ -211,3 +211,5 @@ D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\obj\Debug\net8.0\
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\obj\Debug\net8.0\BookStore.pdb
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\obj\Debug\net8.0\BookStore.genruntimeconfig.cache
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\obj\Debug\net8.0\ref\BookStore.dll
+D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore\bin\Debug\net8.0\StackExchange.Redis.dll

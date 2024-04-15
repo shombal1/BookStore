@@ -17,6 +17,7 @@ namespace BookStore.Controllers
         }
 
         [HttpGet]
+        [Route("All")]
         public async Task<JsonResult> Get()
         {
             return new JsonResult(await _booksRepository.GetAll(),
@@ -26,10 +27,35 @@ namespace BookStore.Controllers
                 });
         }
 
-        [HttpPost]
-        public async Task<JsonResult> Add(Guid authorId,string title,string description,decimal price)
+        [HttpGet]
+        [Route("LastAdded")]
+        public async Task<JsonResult> GetPageLastAdded(int numberPage)
         {
-            Guid id = await _booksRepository.Add(authorId,title, description, price);
+            return new JsonResult(await _booksRepository.GetPageLastAdded(numberPage, sizePage: 3),
+                new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
+        }
+        
+        [HttpGet]
+        [Route("HighestRating")]
+        public async Task<JsonResult> GetPageHighestRating(int numberPage)
+        {
+            return new JsonResult(await _booksRepository.GetPageHighestRating(numberPage, sizePage: 3),
+                new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles
+                });
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> Add(Guid authorId, string title, string description, decimal price,
+            DateTimeOffset? publicationDate, double rating)
+        {
+            Guid id = await _booksRepository.Add(authorId, title, description, price,
+                publicationDate.HasValue ? publicationDate.Value : DateTimeOffset.Now, rating);
+
             return new JsonResult(id);
         }
 
@@ -40,9 +66,10 @@ namespace BookStore.Controllers
         }
 
         [HttpPut]
-        public Task Update(Guid id,string newTitle,string newDescription,decimal newPrice)
+        public Task Update(Guid id, string newTitle, string newDescription, decimal newPrice,
+            DateTimeOffset publicationDate, double rating)
         {
-            return _booksRepository.Update(id,newTitle,newDescription,newPrice);
+            return _booksRepository.Update(id, newTitle, newDescription, newPrice, publicationDate, rating);
         }
     }
 }
