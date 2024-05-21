@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookStore.Postgres.Migrations
 {
     [DbContext(typeof(BookStoreDbContext))]
-    [Migration("20240331140755_AddAuthorIdInTableBooks")]
-    partial class AddAuthorIdInTableBooks
+    [Migration("20240520060033_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,6 +66,12 @@ namespace BookStore.Postgres.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
+                    b.Property<DateTimeOffset>("PublicationDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("Rating")
+                        .HasColumnType("double precision");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text");
@@ -75,6 +81,36 @@ namespace BookStore.Postgres.Migrations
                     b.HasIndex("AuthorId");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("ReplyCommentId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("ReplyCommentId");
+
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
@@ -88,9 +124,46 @@ namespace BookStore.Postgres.Migrations
                     b.Navigation("Author");
                 });
 
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.HasOne("BookStore.Postgres.Models.AuthorEntity", "Author")
+                        .WithMany("Comments")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookStore.Postgres.Models.BookEntity", "Book")
+                        .WithMany("Comments")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookStore.Postgres.Models.CommentEntity", "ReplyComment")
+                        .WithMany("ReplayComments")
+                        .HasForeignKey("ReplyCommentId");
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
+
+                    b.Navigation("ReplyComment");
+                });
+
             modelBuilder.Entity("BookStore.Postgres.Models.AuthorEntity", b =>
                 {
                     b.Navigation("Books");
+
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.Navigation("ReplayComments");
                 });
 #pragma warning restore 612, 618
         }

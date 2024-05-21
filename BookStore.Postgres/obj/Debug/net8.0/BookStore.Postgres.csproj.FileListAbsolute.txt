@@ -23,3 +23,16 @@ D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore.Postgres\obj\Debu
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\refint\BookStore.Postgres.dll
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.pdb
 D:\Programm\JetBrains Rider 2023.1\Project\BookStore\BookStore.Postgres\obj\Debug\net8.0\ref\BookStore.Postgres.dll
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.deps.json
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.dll
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\bin\Debug\net8.0\BookStore.Postgres.pdb
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.csproj.AssemblyReference.cache
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.AssemblyInfoInputs.cache
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.AssemblyInfo.cs
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.csproj.CoreCompileInputs.cache
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.sourcelink.json
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.dll
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\refint\BookStore.Postgres.dll
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\BookStore.Postgres.pdb
+D:\Programs\JetBrain Rider\Projects\BookStore\BookStore.Postgres\obj\Debug\net8.0\ref\BookStore.Postgres.dll

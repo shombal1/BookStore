@@ -80,6 +80,36 @@ namespace BookStore.Postgres.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("ReplyCommentId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("ReplyCommentId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
                 {
                     b.HasOne("BookStore.Postgres.Models.AuthorEntity", "Author")
@@ -91,9 +121,46 @@ namespace BookStore.Postgres.Migrations
                     b.Navigation("Author");
                 });
 
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.HasOne("BookStore.Postgres.Models.AuthorEntity", "Author")
+                        .WithMany("Comments")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookStore.Postgres.Models.BookEntity", "Book")
+                        .WithMany("Comments")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookStore.Postgres.Models.CommentEntity", "ReplyComment")
+                        .WithMany("ReplayComments")
+                        .HasForeignKey("ReplyCommentId");
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
+
+                    b.Navigation("ReplyComment");
+                });
+
             modelBuilder.Entity("BookStore.Postgres.Models.AuthorEntity", b =>
                 {
                     b.Navigation("Books");
+
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+                {
+                    b.Navigation("ReplayComments");
                 });
 #pragma warning restore 612, 618
         }

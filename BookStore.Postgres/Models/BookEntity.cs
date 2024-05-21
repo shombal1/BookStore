@@ -9,6 +9,8 @@
         public DateTimeOffset PublicationDate { get; set; } = DateTimeOffset.Now;
         public double Rating { get; set; } = 0;
         public Guid AuthorId { get; set; }
-        public AuthorEntity? Author { get; set; }
+        public AuthorEntity Author { get; set; }
+
+        public ICollection<CommentEntity> Comments { get; set; }
     }
 }

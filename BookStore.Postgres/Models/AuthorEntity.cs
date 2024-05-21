@@ -7,5 +7,6 @@ public class AuthorEntity
     public string LastName { get; set; } = "";
     public string? Patronymic { get; set; }
     public string? City { get; set; }
-    public List<BookEntity> Books { get; set; } = new List<BookEntity>();
-}
+    public List<BookEntity> Books { get; set; }
+    public ICollection<CommentEntity> Comments { get; set; }
+} 
