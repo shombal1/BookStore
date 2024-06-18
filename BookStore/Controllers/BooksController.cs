@@ -15,7 +15,7 @@ namespace BookStore.Controllers
         {
             _booksRepository = booksRepository;
         }
-
+        
         [HttpGet]
         [Route("All")]
         public async Task<JsonResult> Get()
@@ -50,11 +50,12 @@ namespace BookStore.Controllers
         }
 
         [HttpPost]
+        [Route("Add")]
         public async Task<JsonResult> Add(Guid authorId, string title, string description, decimal price,
             DateTimeOffset? publicationDate, double rating)
         {
             Guid id = await _booksRepository.Add(authorId, title, description, price,
-                publicationDate.HasValue ? publicationDate.Value : DateTimeOffset.Now, rating);
+                publicationDate ?? DateTimeOffset.Now, rating);
 
             return new JsonResult(id);
         }

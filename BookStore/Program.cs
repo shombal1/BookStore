@@ -23,9 +23,22 @@ IConnectionMultiplexer multiplexer =
     ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis") ?? throw new InvalidOperationException());
 builder.Services.AddSingleton(multiplexer);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000");
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+    });
+
+});
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
+//Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -35,6 +48,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors();
 
 app.MapControllers();
 
