@@ -22,7 +22,7 @@ namespace BookStore.Postgres.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BookStore.Postgres.Models.AuthorEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.AuthorEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace BookStore.Postgres.Migrations
                     b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.BookEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,7 +80,7 @@ namespace BookStore.Postgres.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.CommentEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -110,9 +110,9 @@ namespace BookStore.Postgres.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.BookEntity", b =>
                 {
-                    b.HasOne("BookStore.Postgres.Models.AuthorEntity", "Author")
+                    b.HasOne("BookStore.APi.Postgres.Models.AuthorEntity", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -121,21 +121,21 @@ namespace BookStore.Postgres.Migrations
                     b.Navigation("Author");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.CommentEntity", b =>
                 {
-                    b.HasOne("BookStore.Postgres.Models.AuthorEntity", "Author")
+                    b.HasOne("BookStore.APi.Postgres.Models.AuthorEntity", "Author")
                         .WithMany("Comments")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStore.Postgres.Models.BookEntity", "Book")
+                    b.HasOne("BookStore.APi.Postgres.Models.BookEntity", "Book")
                         .WithMany("Comments")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStore.Postgres.Models.CommentEntity", "ReplyComment")
+                    b.HasOne("BookStore.APi.Postgres.Models.CommentEntity", "ReplyComment")
                         .WithMany("ReplayComments")
                         .HasForeignKey("ReplyCommentId");
 
@@ -146,19 +146,19 @@ namespace BookStore.Postgres.Migrations
                     b.Navigation("ReplyComment");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.AuthorEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.AuthorEntity", b =>
                 {
                     b.Navigation("Books");
 
                     b.Navigation("Comments");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.BookEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.BookEntity", b =>
                 {
                     b.Navigation("Comments");
                 });
 
-            modelBuilder.Entity("BookStore.Postgres.Models.CommentEntity", b =>
+            modelBuilder.Entity("BookStore.APi.Postgres.Models.CommentEntity", b =>
                 {
                     b.Navigation("ReplayComments");
                 });

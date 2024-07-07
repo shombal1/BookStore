@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore", "BookStore\BookStore.csproj", "{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.APi", "BookStore.APi\BookStore.APi.csproj", "{6AD7FA27-4A3B-47D8-8FAA-D306EA4FA562}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Postgres", "BookStore.Postgres\BookStore.Postgres.csproj", "{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.E2E", "BookStore.E2E\BookStore.E2E.csproj", "{FC4335DE-16B8-4015-94E9-436F5FA8A395}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF2B82E8-0A8D-41F9-8C4D-55FC591262BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4335DE-16B8-4015-94E9-436F5FA8A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4335DE-16B8-4015-94E9-436F5FA8A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4335DE-16B8-4015-94E9-436F5FA8A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4335DE-16B8-4015-94E9-436F5FA8A395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

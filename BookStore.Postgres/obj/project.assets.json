@@ -834,23 +834,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "D:\\Programs\\VisualStudio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "D:\\Programm\\Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programs\\JetBrain Rider\\Projects\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
+      "projectUniqueName": "D:\\Programm\\JetBrains Rider 2023.1\\Project\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
       "projectName": "BookStore.Postgres",
-      "projectPath": "D:\\Programs\\JetBrain Rider\\Projects\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Programs\\JetBrain Rider\\Projects\\BookStore\\BookStore.Postgres\\obj\\",
+      "projectPath": "D:\\Programm\\JetBrains Rider 2023.1\\Project\\BookStore\\BookStore.Postgres\\BookStore.Postgres.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Programm\\JetBrains Rider 2023.1\\Project\\BookStore\\BookStore.Postgres\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Programs\\VisualStudio\\Shared\\NuGetPackages"
+        "D:\\Programm\\Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -859,7 +859,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -916,7 +915,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
